@@ -30,7 +30,9 @@ public class Incident {
 	@JsonFormat(pattern="dd/MM/yyyy HH:mm")
 	//@JsonDeserialize(using = CustomDateDeserializer.class)
 	private Date nextComm;
-
+	
+	
+	//IMPORTANTE: SEM O CONSTRUTOR VAZIO, O JsonFormat NÃO FUNCIONA
 	public Incident() {
 	}
 	
